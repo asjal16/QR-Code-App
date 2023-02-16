@@ -1,8 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 :root {
-  --white: hsl(0, 0, 100%);
-  --lightGray: hsl(212, 45%, 80%);
-  --grayishBlue: hsl(220, 15%, 55%);
-  --darkBlue: hsl(218, 44%, 22%);
+  --white: rgb(255, 255, 255);
+  --lightGray: rgb(181, 202, 227);
+  --grayishBlue: rgb(123, 135, 157);
+  --darkBlue: rgb(31, 50, 81);
   --psize: 15px;
+}
+body {
+  background-color: var(--lightGray);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white);
+  font-family: "Outfit";
+  text-align: center;
+  width: 250px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.card img {
+  border-radius: 15px;
+  width: 250px;
+}
+.card--paragraph {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
 }
